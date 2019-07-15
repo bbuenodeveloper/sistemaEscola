@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sistema Laravel</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Seja bem vindo {{ $id }} a pagina home</h1>
-</body> 
+    @if($nome == 'Bruno')
+    <h1> O Aluno: {{$nome}} {{$sobrenome}} foi cadastrado com sucesso</h1>
+    @else
+    <h1>Não é o Bruno</h1>
+    @endif
+</body>
 </html>
