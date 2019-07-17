@@ -5,7 +5,7 @@
     <form action="/aluno/cadastro" method="POST">
     @csrf <!-- @csrf  funcção de criptografia. -->
         <input type="text" name="nome">
-        <input type="text" name="sobrenome">
+        <input type="number" name="cpf">
         <button type="submit">Enviar</button>
     </form>
 

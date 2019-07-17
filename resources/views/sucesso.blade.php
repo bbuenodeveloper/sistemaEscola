@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    @if($nome == 'Bruno')
-    <h1> O Aluno: {{$nome}} {{$sobrenome}} foi cadastrado com sucesso</h1>
+    
+    @if(!$erro)
+        <h1> O aluno: {{$aluno->nome}} foi cadastrado com sucesso</h1>
     @else
-    <h1>Não é o Bruno</h1>
+        <h1> Erro ao cadastrar o aluno:{{$aluno->nome}} no banco de dados</h1>
     @endif
+
 </body>
 </html>

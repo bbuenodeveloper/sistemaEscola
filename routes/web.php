@@ -21,3 +21,6 @@ Route::get('/contato', 'contatoController@listarcontatos');
 
 Route::get('/aluno/cadastro','AlunoController@cadastrarAluno');
 Route::post('/aluno/cadastro','AlunoController@cadastrarAluno');
+
+Route::get('/aluno/selecionar', 'AlunoController@selecionarAluno');
+Route::get('/aluno/deletar/{id}', 'AlunoController@deletarAluno');
