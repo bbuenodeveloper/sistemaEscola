@@ -24,3 +24,11 @@ Route::post('/aluno/cadastro','AlunoController@cadastrarAluno');
 
 Route::get('/aluno/selecionar', 'AlunoController@selecionarAluno');
 Route::get('/aluno/deletar/{id}', 'AlunoController@deletarAluno');
+
+Route::get('/produtos/todos', 'ProdutoController@listarTodos');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
